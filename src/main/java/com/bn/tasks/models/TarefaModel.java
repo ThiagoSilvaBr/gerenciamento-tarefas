@@ -10,13 +10,13 @@ public class TarefaModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
     @Column(name = "TarefaDescricao")
-    String descricao;
+    private String descricao;
     @Column(name = "TarefaDataVencimento")
-    LocalDate dataVencimento;
+    private LocalDate dataVencimento;
     @Column(name = "TarefaConcluida")
-    Boolean concluida;
+    private Boolean concluida;
 
     public TarefaModel() {
     }
